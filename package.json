@@ -13,7 +13,7 @@
     "dev": "expo start",
     "build": "expo export -p web",
     "build:web": "expo export -p web",
-    "preview": "npx serve dist"
+    "preview": "npx serve dist",
     "postinstall": "node patch-jimp.js"
   },
   "dependencies": {
