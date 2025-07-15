@@ -14,6 +14,7 @@
     "build": "expo export -p web",
     "build:web": "expo export -p web",
     "preview": "npx serve dist",
+    "prestart": "npx dotenv-cli -e .env",
     "postinstall": "node patch-jimp.cjs"
   },
   "dependencies": {
