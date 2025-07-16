@@ -1,39 +1,30 @@
-{
-  "expo": {
-    "name": "Dream Cinema",
-    "slug": "dream-cinema",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "dark",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#000000"
+export default {
+  expo: {
+    name: "Dream Cinema",
+    slug: "dream-cinema",
+    version: "1.0.0",
+    orientation: "portrait",
+    icon: "./assets/icon.png",
+    splash: {
+      image: "./assets/splash.png",
+      resizeMode: "contain",
+      backgroundColor: "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
+    updates: {
+      fallbackToCacheTimeout: 0
     },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#000000"
+    assetBundlePatterns: ["**/*"],
+    ios: {
+      supportsTablet: true
+    },
+    android: {
+      adaptiveIcon: {
+        foregroundImage: "./assets/adaptive-icon.png",
+        backgroundColor: "#ffffff"
       }
     },
-    "web": {
-      "favicon": "./assets/favicon.png",
-      "bundler": "metro",
-      "output": "server"
-    },
-    "plugins": [
-      "expo-router"
-    ],
-    "scheme": "dream-cinema",
-    "experiments": {
-      "typedRoutes": true
+    web: {
+      favicon: "./assets/favicon.png"
     }
   }
-}
+};
